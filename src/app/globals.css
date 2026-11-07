@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* docs/design.md 팔레트. 값은 hsl(var(--token))에 넣기 위해 H S% L% 형식입니다. */
+    --brand: 349.1 100% 61%; /* #FF385C 브랜드 메인 */
+    --brand-foreground: 0 0% 100%;
+    --brand-point: 339.8 78% 50%; /* #E31C5F 브랜드 포인트 */
+    --mint: 175.3 100% 32.5%; /* #00A699 보조 색상 */
+    --mint-foreground: 0 0% 100%;
+
+    --background: 0 0% 96.9%; /* #F7F7F7 페이지 배경 */
+    --foreground: 0 0% 13.3%; /* #222222 주요 텍스트 */
+    --card: 0 0% 100%; /* #FFFFFF 카드 배경 */
+    --card-foreground: 0 0% 13.3%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13.3%;
+    --primary: 349.1 100% 61%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 175.3 100% 32.5%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 96.9%;
+    --muted-foreground: 0 0% 44.3%; /* #717171 보조 텍스트 */
+    --accent: 0 0% 96.9%;
+    --accent-foreground: 0 0% 13.3%;
+    --destructive: 0 72.2% 50.6%; /* #DC2626 오류 */
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 86.7%; /* #DDDDDD 테두리 */
+    --input: 0 0% 86.7%;
+    --ring: 349.1 100% 61%;
+    --radius: 0.5rem;
+    --chart-1: 349.1 100% 61%;
+    --chart-2: 175.3 100% 32.5%;
+    --chart-3: 339.8 78% 50%;
+    --chart-4: 0 0% 44.3%;
+    --chart-5: 0 72.2% 50.6%;
+  }
+
+  .dark {
+    --brand: 349.1 100% 61%;
+    --brand-foreground: 0 0% 100%;
+    --brand-point: 339.8 78% 50%;
+    --mint: 175.3 100% 32.5%;
+    --mint-foreground: 0 0% 100%;
+
+    --background: 0 0% 13.3%; /* #222222 */
+    --foreground: 0 0% 96.9%; /* #F7F7F7 */
+    --card: 0 0% 13.3%;
+    --card-foreground: 0 0% 96.9%;
+    --popover: 0 0% 13.3%;
+    --popover-foreground: 0 0% 96.9%;
+    --primary: 349.1 100% 61%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 175.3 100% 32.5%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 13.3%;
+    --muted-foreground: 0 0% 86.7%; /* #DDDDDD */
+    --accent: 0 0% 13.3%;
+    --accent-foreground: 0 0% 96.9%;
+    --destructive: 0 72.2% 50.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 44.3%; /* #717171 */
+    --input: 0 0% 44.3%;
+    --ring: 349.1 100% 61%;
+    --chart-1: 349.1 100% 61%;
+    --chart-2: 175.3 100% 32.5%;
+    --chart-3: 339.8 78% 50%;
+    --chart-4: 0 0% 86.7%;
+    --chart-5: 0 72.2% 50.6%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
